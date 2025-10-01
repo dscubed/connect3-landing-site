@@ -2,7 +2,7 @@
 
 :root {
   --background: #ffffff;
-  --secondary: #f4f4f4;
+  --secondary: #f8f8f8;
   --foreground: #000000;
   --border: #eeeeee;
 }
@@ -19,7 +19,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
-    --secondary: #222222;
+    --secondary: #111111;
     --foreground: #eeeeee;
     --border: #222222;
   }
