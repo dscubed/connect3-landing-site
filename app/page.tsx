@@ -9,6 +9,9 @@ const signupUrl = "mailto:president@dscubed.org.au?subject=Student Club Join Req
 export default function Home() {
   return (
     <main className="font-sans min-h-screen w-full [&>*]:mx-auto space-y-16 px-4">
+      <div className="fixed inset-0 -z-1 w-screen h-screen animated-gradient pointer-events-none grayscale opacity-50"></div>
+      <div className="fixed inset-0 -z-1 w-screen h-screen halftone pointer-events-none"></div>
+
       <div className="max-w-screen-sm mt-24 sm:mt-32 mb-8">
         <h1 className="text-xl sm:text-2xl md:text-3xl text-center leading-normal">
           Give students smarter ways
@@ -35,15 +38,19 @@ export default function Home() {
         </h1>
       </div>
 
-      <div className="max-w-screen-sm">
+      {/* <div className="max-w-screen-sm">
         <h1 className="text-xl sm:text-2xl md:text-3xl text-center leading-normal">
           It&apos;s the last app students<br></br> will ever need for campus life.
         </h1>
-      </div>
+      </div> */}
 
       <div className="max-w-screen-sm">
         <h1 className="text-xl sm:text-2xl md:text-3xl text-center leading-normal">
-          A single place to network,<br></br> discover events, connect with clubs,<br></br> and grow.
+          A single place to network,
+          <br></br> 
+          discover events, connect with clubs,
+          <br></br>
+          and grow.
         </h1>
       </div>
 
@@ -55,7 +62,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className="max-w-screen-2xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className="max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
             {clubs.map((club, index) => (
               <Card key={index} data={club} />
             ))}
