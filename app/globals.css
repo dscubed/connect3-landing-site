@@ -2,20 +2,26 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --secondary: #f4f4f4;
+  --foreground: #000000;
+  --border: #eeeeee;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-secondary: var(--secondary);
   --color-foreground: var(--foreground);
+  --color-border: var(--border);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #000000;
+    --secondary: #222222;
+    --foreground: #eeeeee;
+    --border: #222222;
   }
 }
 
