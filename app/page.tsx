@@ -29,7 +29,7 @@ export default function Home() {
 
       <div className="max-w-screen-sm">
         <h1 className="text-xl sm:text-2xl md:text-3xl text-center leading-normal">
-          Connect3 is a intelligent<br></br> knowledge base and discovery tool
+          Connect3 is an intelligent<br></br> knowledge base and discovery tool
           <br></br>
           for university experience.
         </h1>
