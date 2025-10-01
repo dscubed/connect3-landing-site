@@ -72,7 +72,7 @@ export default function Home() {
 
       <div className="text-center text-xl sm:text-2xl md:text-3xl leading-normal w-full my-16 space-y-8 md:space-y-16">
         <p>Things you can do with Connect3</p>
-        <hr className="border-border my-16"></hr>
+        <hr className="max-w-screen-sm border-border my-16 mx-auto"></hr>
         <p>Find Free food on campus</p>
         <p>Finding suitable clubs according to interests</p>
         <p>Listing discounted cafes on campus</p>
