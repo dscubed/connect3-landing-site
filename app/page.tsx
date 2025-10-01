@@ -3,13 +3,14 @@
 import Link from "next/link";
 import { clubs } from "./data";
 import { Card } from "./card";
+import Image from "next/image";
 
 const signupUrl = "mailto:president@dscubed.org.au?subject=Student Club Join Request | Connect3&body=Hi there!%0D%0A%0D%0A Our club: {club name} is interested in joining Connect3.%0D%0A%0D%0A Here is our club email address: {club email address}.";
 
 export default function Home() {
   return (
     <main className="font-sans min-h-screen w-full [&>*]:mx-auto space-y-16 px-4">
-      <div className="fixed inset-0 -z-1 w-screen h-screen animated-gradient pointer-events-none grayscale opacity-50"></div>
+      <div className="fixed inset-0 -z-1 w-screen h-screen animated-gradient pointer-events-none opacity-20"></div>
       <div className="fixed inset-0 -z-1 w-screen h-screen halftone pointer-events-none"></div>
 
       <div className="max-w-screen-sm mt-24 sm:mt-32 mb-8">
@@ -26,8 +27,15 @@ export default function Home() {
         Invite your club {clubs.length > 0 ? `(${clubs.length})` : ''}
       </Link>
       
-      <div className="max-w-screen-sm my-24 sm:my-32">
-        <hr className="border-border"></hr>
+      <div className="max-w-screen-2xl my-24 sm:my-32">
+        {/* <hr className="border-border"></hr> */}
+        <Image
+          src="/demo.png"
+          alt="Description of the image"
+          className="w-full h-auto rounded-3xl"
+          width={1200}
+          height={800}
+        />
       </div>
 
       <div className="max-w-screen-sm">
@@ -62,7 +70,7 @@ export default function Home() {
             </h1>
           </div>
 
-          <div className="max-w-screen-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+          <div className="max-w-screen-2xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
             {clubs.map((club, index) => (
               <Card key={index} data={club} />
             ))}
