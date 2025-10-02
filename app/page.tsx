@@ -27,15 +27,8 @@ export default function Home() {
         Invite your club {clubs.length > 0 ? `(${clubs.length})` : ''}
       </Link>
       
-      <div className="max-w-screen-2xl my-24 sm:my-32">
-        {/* <hr className="border-border"></hr> */}
-        <Image
-          src="/demo.png"
-          alt="Description of the image"
-          className="w-full h-auto rounded-3xl"
-          width={1200}
-          height={800}
-        />
+      <div className="relative max-w-screen-2xl my-24 sm:my-32">
+        <iframe className="rounded-xl w-full aspect-[560/315] h-auto shadow-xl" width="560" height="315" src="https://www.youtube.com/embed/JQ9SDY7jJxo?si=JN4JHAhnnfc3p4JQ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
       </div>
 
       <div className="max-w-screen-sm">
@@ -45,12 +38,6 @@ export default function Home() {
           for university experience.
         </h1>
       </div>
-
-      {/* <div className="max-w-screen-sm">
-        <h1 className="text-xl sm:text-2xl md:text-3xl text-center leading-normal">
-          It&apos;s the last app students<br></br> will ever need for campus life.
-        </h1>
-      </div> */}
 
       <div className="max-w-screen-sm">
         <h1 className="text-xl sm:text-2xl md:text-3xl text-center leading-normal">
@@ -109,6 +96,16 @@ export default function Home() {
         <p>Find competitions and challenges</p>
         <p>Form teams for competitions</p>
         <p>Find co-founders with specific skills</p>
+      </div>
+
+      <div className="relative max-w-screen-2xl my-24 sm:my-32 mb-0!">
+        <Image
+          src="/demo-half.png"
+          alt="Description of the image"
+          className="w-full h-auto rounded-3xl"
+          width={1200}
+          height={800}
+        />
       </div>
     </main>
   );
