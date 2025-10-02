@@ -10,7 +10,7 @@ const signupUrl = "mailto:president@dscubed.org.au?subject=Student Club Join Req
 export default function Home() {
   return (
     <main className="font-sans min-h-screen w-full [&>*]:mx-auto space-y-16 px-4">
-      <div className="fixed inset-0 -z-1 w-screen h-screen animated-gradient pointer-events-none opacity-20"></div>
+      <div className="fixed inset-0 -z-1 w-screen h-screen animated-gradient pointer-events-none opacity-50 hue-rotate-15"></div>
       <div className="fixed inset-0 -z-1 w-screen h-screen halftone pointer-events-none"></div>
 
       <div className="max-w-screen-sm mt-24 sm:mt-32 mb-8">
